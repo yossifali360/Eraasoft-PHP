@@ -173,18 +173,6 @@
             $result = "Invalid operation";
         }
         echo "Result =  $result";
-
-$inputString = 'ErraSoft';
-
-// Split the string into an array of characters
-$characters = str_split($inputString);
-
-// Join the characters with a forward slash
-$outputString = implode('/', $characters);
-
-// Display the result
-echo $outputString;
-
         ?>
 </body>
 </html>
