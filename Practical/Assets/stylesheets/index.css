@@ -1,0 +1,98 @@
+:root {
+	--primary:#0098ff;
+    --secondary:#7c4dff;
+    --white:#fff;
+    --black:#000;
+    --footer:#1c2331;
+}
+*{
+	font-family: "Signika Negative", sans-serif;
+}
+.productCard {
+	border: none;
+	overflow-wrap: break-word;
+  /* background-color: #f2f2f2b9 ; */
+}
+.productCard .card-img-top img {
+	transition: 2s;
+}
+.productCard:hover .card-img-top img {
+	transform: scale(1.2, 1.2);
+}
+.card-title {
+	font-size: 24px !important;
+}
+.card-img-top{
+    height: 200px;
+	z-index: -1;
+}
+.cardIcons {
+	top: 50%;
+	right: 0;
+	opacity: 0;
+	font-size: 18px;
+	background: #fff;
+	transform: translateY(-50%);
+	box-shadow: 24px 13px 46px 11px rgba(48, 117, 208, 0.85);
+	transition: 1s;
+	z-index: 1000;
+}
+.icon-text {
+	top: 50%;
+	left: 60px;
+	transform: translateY(-50%);
+	line-height: 20px;
+}
+.viewIcon,
+.heartIcon{
+    color: black;
+    transition: 1s;
+}
+.viewIcon:hover,
+.heartIcon:hover{
+    color: white;
+}
+.hiddenVeiw ,
+.hiddenHeart {
+	visibility: hidden;
+	display: block;
+	top: -5px;
+	left: 100%;
+	white-space: nowrap;
+	font-size: 14px;
+}
+.productCard:hover .cardIcons {
+	right: 85%;
+	opacity: 1;
+}
+.heart,
+.view{
+	transition: 1s !important;
+}
+.heart:hover,
+.view:hover {
+	background-color: var(--primary);
+	color: var(--white) !important;
+}
+.btnSpan a{
+    width: fit-content;
+}
+.cartImg{
+    width: 100px;
+    height: 100px;
+}
+.deleteFromWishList{
+    top: 0;
+    right: 0;
+    transition: .5s;
+    border: 1px solid #0000008b;
+    border-radius: 4px;
+    padding: 3px;
+}
+.deleteFromWishList:hover{
+    color: red;
+}
+.offcanvasEnd{
+    background-color: #d6d6d6;
+    border-top: 2px solid #0000008b;
+}
